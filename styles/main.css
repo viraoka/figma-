@@ -1,0 +1,138 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding:  0 400px 0 605px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.header {
+    background-color: #332F21;
+    min-height: 200px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    /* font-family: 'Montserrat', sans-serif; */
+    color: #fff;
+    margin-bottom: 45px;
+}
+
+.header_title {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #F9D849;
+    letter-spacing: 2px;
+}
+
+span {
+    color: #fff;
+}
+
+.header_text {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-bottom: 14px;
+    min-width: 140px;
+    margin-right: 83px;
+    letter-spacing: 0.5px;
+}
+.header_button {
+    width: 150px;
+    height: 22px;
+    /* font-family: 'Montserrat', sans-serif;    font-size: 10px; */
+    font-weight: 300;
+    border: none;
+    background-color: #FFC800;
+    text-transform: uppercase;
+    font-size: 8px;
+}
+
+/* Block */
+
+.block {
+    padding: 0 400px;
+    background-color: #332F21;
+    min-height: 200px;
+}
+.block_title {
+    font-weight: bolder;
+    color: #FFC800;
+    margin-left: 40px;
+}
+.block_text {
+    font-size: 8px;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-right: 50px;
+    margin-top: 30px;
+    letter-spacing: 1.3px;
+    line-height: 13px;
+    margin: 0 auto;
+}
+
+.services {
+    padding: 50px 0 50px;
+}
+
+.services_items {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 0 50px;
+}
+.item {
+    width: 180px;
+    height: 90px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.services_items_img {
+    align-self: center;
+    width: 30px;
+}
+.services_items_title {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    .services_items {
+        flex-direction: column;
+        align-items: center;
+    }
+    .services_items_title {
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header_title {
+        font-size: 18px;
+    }
+}
